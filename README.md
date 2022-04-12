@@ -7,7 +7,7 @@ Reference Paper: [Learning to Compose Soft Prompts for Compositional Zero-Shot L
 
 If you find CSP helpful, please cite our paper:
 ```
-@artciel{csp2022,
+@article{csp2022,
   author = {Nayak, Nihal V. and Yu, Peilin and Bach, Stephen H.},
   title = {Learning to Compose Soft Prompts for Compositional Zero-Shot Learning},
   volume = {arXiv:2204.03574 [cs.LG]},
