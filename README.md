@@ -39,7 +39,7 @@ If you already have setup the datasets, you can use symlink and ensure the follo
 ```
 python -u train.py \
   --dataset mit-states \
-  --model ViT-L/14 \
+  --clip_model ViT-L/14 \
   --experiment_name csp \
   --seed 0 \
   --epochs 20 \
