@@ -62,12 +62,15 @@ We evaluate our models in two settings: closed-world and open-world.
 ```
 python -u evaluate.py \
   --dataset mit-states \
+  --clip_model ViT-L/14 \
   --soft_embeddings data/model/mit-states/sample_model/soft_embeddings_epoch_20.pt \
   --context_length 16 \
   --text_encoder_batch_size 36 \
   --eval_batch_size 16 \
   --experiment_name csp
 ```
+You can change the experiment name to `clip` to benchmark the pretrained clip results. 
+
 ### Open-World Evaluation
 For our open-world evaluation, we compute the feasbility calibration and then evaluate on the dataset.
 
