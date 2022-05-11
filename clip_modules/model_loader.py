@@ -180,13 +180,12 @@ def build_model(state_dict: dict, context_length=77):
     embed_dim = state_dict["text_projection"].shape[1]
     # context_length = state_dict["positional_embedding"].shape[0]
 
-    if context_length > 77:
-        warnings.warn(
-            f"context length is set to {context_length}. "
-            f"Positional embeddings may not work."
-        )
-
+    if context_length != 77:
         if context_length > 77:
+            warnings.warn(
+                f"context length is set to {context_length}. "
+                f"Positional embeddings may not work "
+            )
             zeros = torch.zeros((context_length - 77, embed_dim))
             state_dict["positional_embedding"] = torch.cat(
                 (state_dict["positional_embedding"], zeros), dim=0
