@@ -5,16 +5,6 @@ Reference Paper: [Learning to Compose Soft Prompts for Compositional Zero-Shot L
 
 ![alt text](assets/csp-figure.png)
 
-If you find CSP helpful, please cite our paper:
-```
-@article{csp2022,
-  author = {Nayak, Nihal V. and Yu, Peilin and Bach, Stephen H.},
-  title = {Learning to Compose Soft Prompts for Compositional Zero-Shot Learning},
-  volume = {arXiv:2204.03574 [cs.LG]},
-  year = {2022},
-}
-```
-
 ## Setup
 ```
 conda create --name clip python=3.7
@@ -158,3 +148,14 @@ python -u mix/evaluate_mix_train.py \
 ## Credits
 The project uses openly available model, code, and datasets.
 Please see the [credits](credits.md).
+
+## Citation
+If you find CSP helpful, please cite our paper:
+```
+@article{csp2022,
+  author = {Nayak, Nihal V. and Yu, Peilin and Bach, Stephen H.},
+  title = {Learning to Compose Soft Prompts for Compositional Zero-Shot Learning},
+  volume = {arXiv:2204.03574 [cs.LG]},
+  year = {2022},
+}
+```
