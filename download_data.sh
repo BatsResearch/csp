@@ -13,7 +13,7 @@ cd data
 # download datasets and splits
 wget -c http://wednesday.csail.mit.edu/joseph_result/state_and_transformation/release_dataset.zip -O mitstates.zip
 wget -c http://vision.cs.utexas.edu/projects/finegrained/utzap50k/ut-zap50k-images.zip -O utzap.zip
-wget -c http://www.cs.cmu.edu/~spurushw/publication/compositional/compositional_split_natural.tar.gz -O compositional_split_natural.tar.gz
+wget -c https://www.senthilpurushwalkam.com/publication/compositional/compositional_split_natural.tar.gz -O compositional_split_natural.tar.gz
 wget -c https://s3.mlcloud.uni-tuebingen.de/czsl/cgqa-updated.zip -O cgqa.zip
 
 
@@ -31,7 +31,7 @@ mv ut-zap50k/ut-zap50k-images ut-zap50k/_images/
 unzip cgqa.zip -d cgqa/
 
 # Download new splits for Purushwalkam et. al
-tar -zxvf splits.tar.gz
+tar -zxvf compositional_split_natural.tar.gz
 
 cd $CURRENT_DIR
 python datasets/reorganize_utzap.py
