@@ -152,10 +152,11 @@ Please see the [credits](credits.md).
 ## Citation
 If you find CSP helpful, please cite our paper:
 ```
-@article{csp2022,
-  author = {Nayak, Nihal V. and Yu, Peilin and Bach, Stephen H.},
-  title = {Learning to Compose Soft Prompts for Compositional Zero-Shot Learning},
-  volume = {arXiv:2204.03574 [cs.LG]},
-  year = {2022},
+@inproceedings{
+  csp2023,
+  title={Learning to Compose Soft Prompts for Compositional Zero-Shot Learning},
+  author={Nihal V. Nayak and Peilin Yu and Stephen H. Bach},
+  booktitle={International Conference on Learning Representations},
+  year={2023}
 }
 ```
