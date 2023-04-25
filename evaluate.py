@@ -776,13 +776,17 @@ if __name__ == "__main__":
         evaluator = Evaluator(val_dataset, model=None)
         feasibility_path = os.path.join(
             DIR_PATH, f'data/feasibility_{config.dataset}.pt')
-        unseen_scores = torch.load(
-            feasibility_path,
-            map_location='cpu')['feasibility']
+        # unseen_scores = torch.load(
+        #     feasibility_path,
+        #     map_location='cpu')['feasibility']
         with torch.no_grad():
             all_logits, all_attr_gt, all_obj_gt, all_pair_gt = predict_logits(
                 model, val_text_rep, val_dataset, device, config)
             if config.open_world:
+                unseen_scores = torch.load(
+                    feasibility_path,
+                    map_location='cpu'
+                )['feasibility']
                 print('using threshold: ', best_th)
                 all_logits = threshold_with_feasibility(
                     all_logits, val_dataset.seen_mask, threshold=best_th, feasiblity=unseen_scores)
