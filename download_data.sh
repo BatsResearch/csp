@@ -13,7 +13,7 @@ cd data
 # download datasets and splits
 wget -c http://wednesday.csail.mit.edu/joseph_result/state_and_transformation/release_dataset.zip -O mitstates.zip
 wget -c http://vision.cs.utexas.edu/projects/finegrained/utzap50k/ut-zap50k-images.zip -O utzap.zip
-wget -c https://www.senthilpurushwalkam.com/publication/compositional/compositional_split_natural.tar.gz -O compositional_split_natural.tar.gz
+wget -c https://senthilpurushwalkam.com/publications/compositional/compositional_split_natural.tar.gz -O compositional_split_natural.tar.gz
 wget -c https://s3.mlcloud.uni-tuebingen.de/czsl/cgqa-updated.zip -O cgqa.zip
 
 
